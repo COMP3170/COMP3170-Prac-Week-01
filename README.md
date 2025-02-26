@@ -102,7 +102,7 @@ Then, select JDK 17.0.5 by ticking Workspace Default JRE.
 
 Important info for Mac users
 ---
-Running LWJGL code on Mac requires adding the following argument to the JVM: `-XstartOnFistThread`.
+Running LWJGL code on Mac requires adding the following argument to the JVM: `-XstartOnFirstThread`.
 
 In Eclipse, this can be done in <b>Run > Run configurations > Arguments > VM arguments.</b>
 
