@@ -115,8 +115,68 @@ If all goes well, you should now see a triangle that changes from black to purpl
 
 ![A triangle going from black to purple.](images/grimtriangle.png)
 
+Your task today is to analyse this code to better understand how a graphics application generally works. Working with others and guided by your instructor, answer the following questions - you'll want to leave comments in the code as you go so you can check back on this later:
 
-### Syntax Highlighting
+### Project structure
+* There are four files in this project: `Scene.java`, `Week1.java`, `fragment.glsl` and `vertex.glsl`. What is the purpose of each of them? How might this change in a bigger project?
+
+### Creating an app
+* This app renders a window on screen of certain dimensions and with a particular size. Where in the code is this set?
+
+* Resizing the screen causes it to change shape. Where in the code does this happen?
+
+### Drawing a scene
+* Each frame, the triangle is drawn on screen with the same background colour. Which lines of code control this, and how?
+
+* The triangle is drawn with particular dimensions. Where are these defined?
+
+* The triangle is drawn with its vertices at particular points on screen. Where is this defined?
+
+* The triangle is drawn a particular colour. How and where is this defined?
+
+### Shaders
+#### Vertex Shader
+* The shaders used to draw the scene need to be pointed to and compiled. Where does this happen?
+
+* The vertices used to create the triangle need to be passed into graphics memory. Where does this happen?
+
+* The vertex shader is needed to control the size, shape and location of the triangle on screen. What data is passed through to achieve this, and where (both in Java and where it is received and used in GLSL)?
+
+#### Fragment Shader
+* The fragment shader determines what colour to make each pixel. Where does it get the data to make the triangle purple?
+
+* The triangle is black at the bottom, and slowly becomes purple. This is happening in the fragment shader. Which line of code is altering the colour of the triangle? What additional properties are being used to do this?
+
+Your instructor will guide you on sharing your findings. You should also mention any lines of code or functions you are still unsure about at this time.
+
+## Making Changes
+With the time remaining, put what you've learnt into action! Here are a few challenges:
+
+Adjust the height of the triangle, but nothing else.
+<p style="text-align:center"><img src="images/changeheight.png" width="50%" height="50%"></p>
+
+Change the size of the screen on start-up.
+<p style="text-align:center"><img src="images/changewindow.png" width="50%" height="50%"></p>
+
+Change the background colour to something other than blue, and the triangle to something other than purple.
+<p style="text-align:center"><img src="images/changecolours.png" width="50%" height="50%"></p>
+
+Change the points of the triangle to make it into a right angle, obtuse, or other type of triangle.
+<p style="text-align:center"><img src="images/changepoints.png" width="50%" height="50%"></p>
+
+Change the triangle so its colour changes horizontally instead of vertically.
+<p style="text-align:center"><img src="images/changedirection.png" width="50%" height="50%"></p>
+
+Change the triangle so that the redness changes vertically, and the greenness changes horizontally (blue can be whatever you want).
+<p style="text-align:center"><img src="images/finalboss.png" width="50%" height="50%"></p>
+
+
+Anything else you can think of!
+
+## Show-And-Tell Post
+Make sure you save and push your work, but also take some screen captures of your triangles to share on the weekly iLearn show-and-tell post. See you next time!
+
+## Syntax Highlighting
 There is an Eclipse Shaders extension which does GLSL syntax highlighting available here:
 https://sourceforge.net/projects/glshaders/.
 
