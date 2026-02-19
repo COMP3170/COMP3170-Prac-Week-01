@@ -111,6 +111,10 @@ If you encounter problems getting your code to run after this, speak to your tut
 
 In the package explorer, find Week1.java. Select <b>Run > Run as … > Java Application</b>.
 
+If all goes well, you should now see a triangle that changes from black to purple vertically:
+
+![A triangle going from black to purple.](images/grimtriangle.png)
+
 
 ### Syntax Highlighting
 There is an Eclipse Shaders extension which does GLSL syntax highlighting available here:
